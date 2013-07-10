@@ -4,7 +4,13 @@
 
 ## Installation
 
+### As a [component](https://github.com/component/component)
+
     $ component install hugojosefson/apply-safely-for-angular
+
+### With [Bower](http://bower.io/)
+
+    $ bower install hugojosefson-apply-safely-for-angular
 
 ## API
 

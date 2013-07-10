@@ -5,7 +5,9 @@
   "version": "0.0.2.snapshot",
   "keywords": ["angular", "angularjs", "apply", "safe", "digest"],
   "dependencies": {},
-  "development": {},
+  "development": {
+    "hugojosefson/update-bower-from-component": "0.1.0"
+  },
   "license": "MIT",
   "main": "index.js",
   "scripts": [
