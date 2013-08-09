@@ -14,10 +14,10 @@
 
 ## API
 
-    require("applySafely");
+    require('apply-safely-for-angular');
 
     // Example use
-    angular.module("yourModule", []).controller("yourController", function($scope, applySafely) {
+    angular.module("yourModule", ["applySafely"]).controller("yourController", function($scope, applySafely) {
 
       someNonAngularCodeWhichCallsBack("params", function callback(result) {
         applySafely($scope, function() {

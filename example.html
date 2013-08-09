@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src='build/build.js'></script>
+    <script>
+      require('apply-safely-for-angular');
+
+      var mod = window.angular.module('my-app', ['applySafely']);
+
+      mod.controller('Ctrl', function ($scope, applySafely) {
+        setTimeout(function () {
+          applySafely($scope, function () {
+            console.log('boo');
+          });
+        }, 1000);
+      });
+
+    </script>
+  </head>
+
+  <body ng-app='my-app' ng-controller='Ctrl'>
+  </body>
+
+</html>
